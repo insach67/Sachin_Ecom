@@ -1,0 +1,136 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.iShop-nav{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 600;
+    color: rgb(255, 56, 56);
+    text-align: center;
+    font-size: 2.5em;
+    margin:20px;
+}
+.cart-nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    font-family:'Montserrat', sans-serif ;
+    width:100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.cart-left-nav{
+    display: flex;
+    justify-content: space-between;
+    width:8%
+}
+.cart-right-nav
+{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+.line-nav{
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+.bar-nav{
+    display: none;
+}
+.main-container-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width:50%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.sub-container-nav{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left:0;
+    width:100%;
+    background-color:white;
+    border-radius:2px;
+    padding-top: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
+.hover-nav:hover .sub-container-nav{
+    visibility:visible;
+}
+.name-nav
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight:400;
+}
+.topics-nav{
+    font-weight: 700;
+}
+.inner-container-nav{
+    width:25%
+}
+.inner-topics-nav{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: rgb(196, 195, 192);
+}
+@media only screen and (max-width:700px) {
+    .bar-nav{
+        display: block;
+    }
+    .cart-left-nav{
+        width:25%
+    }
+    .cart-right-nav
+    {
+        width: 60%;
+    }
+    .iconBars-nav{
+        display:block;
+        width: 5%;
+        margin-right: auto;
+        margin-left:auto
+    }
+    
+    .main-container-nav
+    {
+        flex-direction: column;
+        width:60%;
+        position: static;
+        text-align: center;
+        display: none;
+        background-color: rgb(221, 221, 71);
+        border-radius: 3px;
+        margin-bottom: 5px;
+    }
+    
+    .toggle-nav
+    {
+        display:block;
+    }
+    .sub-container-nav{
+        position: static;
+        visibility: visible;
+        display: none;
+        background-color: rgb(221, 221, 71);
+        border-top: 1px solid lightgoldenrodyellow;
+        border-bottom: 1px solid lightgoldenrodyellow;
+    }
+    .toggleStore-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-topics-nav{
+        display: none;
+    }
+    .toggleSubTopics-nav{
+        display: block;
+    }
+    .inner-container-nav{
+        width: 100%;
+    }
+}

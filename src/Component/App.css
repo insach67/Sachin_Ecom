@@ -1,0 +1,26 @@
+body{
+    font-size:32px;
+}
+.container
+{
+    margin:auto;
+    width:80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card
+{
+    width:20%;
+    border:1px solid black;
+    text-align: center;
+    min-height:300px;
+    margin-top:1.5em
+}
+button{
+    font-size:1.3rem;
+    background-color:orange;
+    border:0px;
+    border-radius:5px;
+    cursor:pointer
+}

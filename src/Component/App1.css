@@ -1,0 +1,235 @@
+.page2{
+    width:80%;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:lighter;
+    font-size:18px;
+}
+.page2-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.side-container{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container{
+    width:68%;
+    display:flex;
+    flex-direction: column;
+}
+.outside-shopping-container{
+    display:flex;
+    flex-direction: column;
+}
+.shopping-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shopping-product{
+    width: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 2px solid rgb(243, 239, 239);
+    border-radius:5px;
+    position: relative
+}
+.image{
+    padding-bottom: 20px;
+}
+.Rating{
+    padding-bottom: 10px;
+}
+.Name
+{
+    padding-bottom: 10px;
+    font-size:0.9em;
+    letter-spacing: 0.35px;
+    color: #262626;
+}
+.shopping-product:hover{
+    box-shadow: -6px 6px 10px 3px rgb(77, 77, 77);
+    opacity: 0.5;
+}
+.selectOption
+{
+    position: absolute;
+    top:35%;
+    left:35%;
+    visibility: hidden;
+    opacity: 1;
+}
+.shopping-product:hover .selectOption
+{
+    visibility: visible;
+    font-size:1.7rem;
+    opacity: 1;
+}
+.icon-hover3:hover
+{
+    color: red;
+    opacity: 1;
+}
+.icon-hover4:hover
+{
+    color: blue;
+    opacity: 1;
+}
+.outside-category{
+    width:80%;
+    background-color: rgb(241, 240, 240);
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.category{
+    display: flex;
+    flex-direction: column;
+}
+.sub-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.colors{
+    display:flex;
+    justify-content:space-evenly;
+}
+.color-highlight2
+{
+    border-radius: 50%;
+    border:2px solid black;
+    padding:1px;
+}
+.page2-image{
+    background-image: url("./Images/photo-1567581935884-3349723552ca.jpg");
+    background-repeat: no-repeat;
+    padding-top:20px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    background-size:100% 100%;
+    margin-bottom: 20px;
+}
+.filter{
+    display: flex;
+    margin-bottom: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color:rgb(241, 240, 240);
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.inside-filter{
+    width:25%;
+    font-size:1.2rem;
+    text-align: center;
+}
+#normal-filter
+{
+    display: none;
+}
+#sort
+{
+    width:40%
+}
+.page-change{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(233, 231, 223);
+}
+.page-change-span{
+    width:10%;
+    font-weight:900;
+    cursor: pointer;
+    text-align: center;
+}
+.page-change-span:hover{
+    background-color: rgb(17, 17, 17);
+    color:white
+}
+
+@media only screen and (max-width:700px)
+{
+    .page2-container
+    {
+        display:flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .side-container
+    {
+        width:95%;
+        position:absolute;
+        top:320px;
+        background-color:rgb(212, 209, 209);
+        padding-top:20px;
+        border-radius:5px;
+        z-index: 1;
+    }
+    .outside-category
+    {
+        width:90%
+    }
+    .more
+    {
+        display: none;
+    }
+    .main-container
+    {
+        width:100%;
+        position: relative;
+    }
+    .shopping-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shopping-product
+    {
+        width:60%;
+    }
+    .filter
+    {
+        justify-content:space-around;
+        align-items: center;
+    }
+    .inside-filter{
+        
+        font-size:1rem;
+        
+    }
+    #sort
+    {
+        width:45%
+    }
+    #grid-filter
+    {
+        width:20%;
+    }
+    #normal-filter
+    {
+        width:20%;
+        display: block;
+    }
+    #items
+    {
+        display: none;
+    }
+    .toggle
+    {
+        display:none;
+    }
+}

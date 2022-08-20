@@ -1,0 +1,218 @@
+body{
+    font-size:16px
+}
+.checkout{
+    text-align: center;
+    background-color: rgb(84, 190, 231);
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color:white
+}
+.cart{
+    width:80%;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.cart-label{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size:18px;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom:1px solid lightgrey;
+}
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cart-product{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: bold;
+    font-size:1rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom:1px solid lightgrey;
+}
+.product{
+    width:25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.outer-container{
+    width:75%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-name{
+    width:35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.inner-container{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.unit_price{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/*.product-with-name
+{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+.price{
+    width:15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.qty{
+    width:20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.qty-inside{
+    background-color: rgb(235, 227, 227);
+    border-radius: 5px;
+}*/
+button{
+    background-color:rgb(235, 227, 227);
+    border:0px;
+    color: #2323f3;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:20px;
+    align-items:center;
+    margin-bottom: 50px;
+}
+.code-redeem{
+    width:35%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight:300;
+    font-size:1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.code{
+    background-color: rgb(240, 235, 235);
+    color:rgb(199, 196, 196);
+    width:65%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.redeem{
+    background-color: rgb(84, 190, 231);
+    color:white;
+    width: 35%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.total-price{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight:300;
+    font-size:1rem;
+    padding-bottom: 15px;
+}
+#hr{
+    border-bottom: 1px solid lightgray;
+}
+#final-total{
+    padding-top:10px;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight:bold;
+}
+
+@media only screen and (max-width:700px)
+{
+    .disappear{
+        display: none;
+    }
+    .product{
+        width:40%;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
+    .outer-container{
+        width:55%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .product-name{
+        width:100%;
+        display:block
+    }
+    .inner-container{
+        width:100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .code-redeem{
+        width:100%;
+    }
+    .total-price{
+        width:100%
+    }
+    .remove-button{
+        margin-right: auto;
+    }
+}
